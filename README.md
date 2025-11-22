@@ -10,3 +10,5 @@ System.debug(updatedContacts);
 ```
 
 After execute on anonoymous apex code, change the debug perspective to "analysis" to see the entire analyse of the execution.
+
+Presentation link : https://docs.google.com/presentation/d/1Wuo2xZ-M2JAuLOgDf2ZxQB7MiUovNPefWO8pLc0nj3Y/edit?slide=id.g3a84f118624_0_73#slide=id.g3a84f118624_0_73

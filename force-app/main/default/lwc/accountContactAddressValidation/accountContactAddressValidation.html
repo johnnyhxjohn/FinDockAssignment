@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Validate Addresses" icon-name="standard:task2">
+        <div class="slds-var-m-around_medium">
+            <p class="slds-var-m-bottom_small">
+                <lightning-button label="Validate Address" onclick={handleValidate}></lightning-button>
+                <span style="float:right">{message}</span>
+            </p>
+            <lightning-card title="Related Contacts">
+                <lightning-datatable
+                    key-field="Id"
+                    data={contacts}
+                    columns={columns}>
+                </lightning-datatable>
+        
+            </lightning-card>
+        </div>
+    </lightning-card>
+</template>

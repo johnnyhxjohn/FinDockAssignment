@@ -3,7 +3,20 @@
         <div class="slds-var-m-around_medium">
             <p class="slds-var-m-bottom_small">
                 <lightning-button label="Validate Address" onclick={handleValidate}></lightning-button>
-                <span style="float:right">{message}</span>
+                <!-- Warning message box -->
+                <template if:true={warningMessage}>
+                    <div class="slds-notify slds-notify_alert slds-alert_warning" role="alert">
+                        <span class="slds-assistive-text">Warning</span>
+                        <span class="slds-text-color_warning">{warningMessage}</span>
+                    </div>
+                </template>
+                <!-- Warning message box -->
+                <template if:true={successMessage}>
+                    <div class="slds-notify slds-notify_alert slds-alert_success" role="alert">
+                        <span class="slds-assistive-text">Success</span>
+                        <span class="slds-text-color_warning">{successMessage}</span>
+                    </div>
+                </template>                
             </p>
             <lightning-record-view-form record-id={recordId} object-api-name="Contact">
                 <div class="slds-grid">
